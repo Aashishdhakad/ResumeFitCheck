@@ -1,0 +1,81 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="scoreCardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#171b24"/>
+      <stop offset="100%" stop-color="#12151c"/>
+    </linearGradient>
+    <style>
+      .serif { font-family: Georgia, 'Times New Roman', serif; }
+      .sans { font-family: 'Segoe UI', Arial, sans-serif; }
+      .mono { font-family: 'Courier New', monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="800" fill="#12151c"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="86" fill="#12151c" stroke="#262b36" stroke-width="1"/>
+  <rect x="24" y="23" width="40" height="40" rx="8" fill="#f0c869"/>
+  <path d="M38 38 L50 38 M44 32 L44 48" stroke="#12151c" stroke-width="3" stroke-linecap="round"/>
+  <text x="76" y="40" class="serif" font-size="21" font-weight="600" fill="#e9e6dd">Dossier · Resume Match Engine</text>
+  <text x="76" y="58" class="mono" font-size="11" fill="#8b91a0" letter-spacing="1">CLAUDE-POWERED ATS SIMULATION</text>
+
+  <!-- Tab pills -->
+  <rect x="960" y="27" width="216" height="32" rx="9" fill="#171b24" stroke="#262b36"/>
+  <rect x="964" y="31" width="100" height="24" rx="6" fill="#f0c869"/>
+  <text x="985" y="47" class="sans" font-size="12" font-weight="600" fill="#12151c">Analyze</text>
+  <text x="1080" y="47" class="sans" font-size="12" fill="#8b91a0">History (12)</text>
+
+  <!-- Role label input -->
+  <rect x="24" y="106" width="1152" height="40" rx="8" fill="#171b24" stroke="#262b36"/>
+  <text x="40" y="130" class="mono" font-size="12" fill="#6b7280">Label this run — e.g. 'Microsoft SWE — Aug draft'</text>
+
+  <!-- Two input panels -->
+  <rect x="24" y="162" width="566" height="240" rx="12" fill="#171b24" stroke="#262b36"/>
+  <line x1="24" y1="204" x2="590" y2="204" stroke="#262b36"/>
+  <text x="40" y="188" class="sans" font-size="13" font-weight="600" fill="#c9cdd6">📄 Your résumé</text>
+  <text x="560" y="188" class="mono" font-size="10" fill="#6b7280" text-anchor="end">USE SAMPLE</text>
+  <text x="40" y="228" class="sans" font-size="12" fill="#6b7280">Aashish Kumar — Software Engineer</text>
+  <text x="40" y="248" class="sans" font-size="12" fill="#6b7280">Built internal tools using Python and REST APIs...</text>
+
+  <rect x="610" y="162" width="566" height="240" rx="12" fill="#171b24" stroke="#262b36"/>
+  <line x1="610" y1="204" x2="1176" y2="204" stroke="#262b36"/>
+  <text x="626" y="188" class="sans" font-size="13" font-weight="600" fill="#c9cdd6">🎯 Target job description</text>
+  <text x="1146" y="188" class="mono" font-size="10" fill="#6b7280" text-anchor="end">USE SAMPLE</text>
+  <text x="626" y="228" class="sans" font-size="12" fill="#6b7280">Software Engineer (AI Applications)...</text>
+  <text x="626" y="248" class="sans" font-size="12" fill="#6b7280">Design agentic workflows using the Claude API...</text>
+
+  <!-- Run button -->
+  <rect x="500" y="426" width="200" height="46" rx="8" fill="#f0c869"/>
+  <text x="600" y="454" class="sans" font-size="14" font-weight="700" fill="#12151c" text-anchor="middle">✦ Run match analysis</text>
+
+  <!-- Score card -->
+  <rect x="24" y="498" width="1152" height="130" rx="14" fill="url(#scoreCardBg)" stroke="#262b36"/>
+  <circle cx="110" cy="563" r="46" fill="none" stroke="#262b36" stroke-width="10"/>
+  <circle cx="110" cy="563" r="46" fill="none" stroke="#3fae6a" stroke-width="10" stroke-dasharray="217 289" stroke-linecap="round" transform="rotate(-90 110 563)"/>
+  <text x="110" y="558" class="serif" font-size="26" font-weight="700" fill="#e9e6dd" text-anchor="middle">78</text>
+  <text x="110" y="576" class="mono" font-size="9" fill="#8b91a0" text-anchor="middle" letter-spacing="1">MATCH</text>
+  <text x="200" y="535" class="mono" font-size="11" fill="#8b91a0" letter-spacing="1">MATCH VERDICT</text>
+  <text x="200" y="562" class="serif" font-size="19" fill="#e9e6dd">Strong technical overlap — needs sharper AI/LLM-specific framing.</text>
+
+  <!-- Keyword blocks -->
+  <rect x="24" y="646" width="566" height="130" rx="12" fill="#171b24" stroke="#262b36"/>
+  <text x="40" y="672" class="sans" font-size="13" font-weight="600" fill="#c9cdd6">✓ Matched</text>
+  <rect x="40" y="686" width="70" height="26" rx="13" fill="#1c2a20" stroke="#2c4633"/>
+  <text x="75" y="703" class="sans" font-size="11" fill="#8fd3a5" text-anchor="middle">Python</text>
+  <rect x="118" y="686" width="60" height="26" rx="13" fill="#1c2a20" stroke="#2c4633"/>
+  <text x="148" y="703" class="sans" font-size="11" fill="#8fd3a5" text-anchor="middle">REST</text>
+  <rect x="186" y="686" width="50" height="26" rx="13" fill="#1c2a20" stroke="#2c4633"/>
+  <text x="211" y="703" class="sans" font-size="11" fill="#8fd3a5" text-anchor="middle">Git</text>
+
+  <rect x="610" y="646" width="566" height="130" rx="12" fill="#171b24" stroke="#262b36"/>
+  <text x="626" y="672" class="sans" font-size="13" font-weight="600" fill="#e08a75">! Missing from your resume</text>
+  <rect x="626" y="686" width="90" height="26" rx="13" fill="#2a1c1a" stroke="#4a2c26"/>
+  <text x="671" y="703" class="sans" font-size="11" fill="#e6a893" text-anchor="middle">Claude API</text>
+  <rect x="722" y="686" width="70" height="26" rx="13" fill="#2a1c1a" stroke="#4a2c26"/>
+  <text x="757" y="703" class="sans" font-size="11" fill="#e6a893" text-anchor="middle">MCP tools</text>
+  <rect x="798" y="686" width="120" height="26" rx="13" fill="#2a1c1a" stroke="#4a2c26"/>
+  <text x="858" y="703" class="sans" font-size="11" fill="#e6a893" text-anchor="middle">prompt engineering</text>
+
+  <text x="1176" y="796" class="mono" font-size="10" fill="#3a3f4a" text-anchor="end">STATIC UI MOCKUP — NOT A SCREENSHOT</text>
+</svg>
